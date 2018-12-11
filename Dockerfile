@@ -3,5 +3,5 @@ MAINTAINER Beth Yates <byates@ebi.ac.uk>
 
 COPY build.sh /
 
-WORKDIR /var/www/
+WORKDIR /home/pipeline/
 

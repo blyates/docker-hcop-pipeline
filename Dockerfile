@@ -5,4 +5,3 @@ COPY build.sh /
 
 RUN /build.sh
 
-WORKDIR /var/www/

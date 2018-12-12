@@ -22,6 +22,7 @@ yum -y install perl-DBD-mysql perl-DBI
 yum -y install perl-DBD-Pg
 yum -y install which
 yum -y install perl-Test-Most
+yum -y install expat-devel
 
 cpanm Bio::Perl;
 

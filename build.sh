@@ -23,8 +23,7 @@ yum -y install perl-DBD-Pg
 yum -y install which
 yum -y install perl-Test-Most
 yum -y install expat-devel
-
-cpanm Bio::Perl;
+yum -y install perl-GraphViz
 
 mkdir /home/src;
 cd /home/src;
@@ -41,3 +40,5 @@ git checkout -b version/2.1;
 cpanm --installdeps .
 ls -al;
 cd;
+
+cpanm Bio::Perl;

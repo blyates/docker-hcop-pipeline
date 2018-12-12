@@ -33,9 +33,12 @@ pwd;
 git clone https://github.com/Ensembl/ensembl-hive.git;
 cd ensembl-hive;
 git checkout -b version/2.1;
+cpanm --installdeps .
 cd ..;
 git clone https://github.com/Ensembl/ensembl.git;
 cd ensembl
 git checkout -b release/77;
-cd ..;
-ls -al; 
+cpanm --installdeps . 
+ls -al;
+cd ../..;
+mkdir bioperl-1.2.3;

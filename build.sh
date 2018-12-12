@@ -38,4 +38,5 @@ git clone https://github.com/Ensembl/ensembl-hive.git;
 cd ensembl-hive;
 git checkout -b version/2.1;
 cpanm --installdeps .
+ls -al;
 cd;

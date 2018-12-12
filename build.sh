@@ -20,3 +20,4 @@ rpm -ivh epel-release-6-8.noarch.rpm
 
 yum -y install perl-DBD-mysql perl-DBI
 yum -y install perl-DBD-Pg
+yum -y install which

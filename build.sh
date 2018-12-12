@@ -21,3 +21,11 @@ rpm -ivh epel-release-6-8.noarch.rpm
 yum -y install perl-DBD-mysql perl-DBI
 yum -y install perl-DBD-Pg
 yum -y install which
+
+cd /home/pipeline;
+mkdir src;
+cd src;
+
+mkdir ensembl-perl;
+cd ensembl-perl;
+git clone https://github.com/Ensembl/ensembl-hive.git

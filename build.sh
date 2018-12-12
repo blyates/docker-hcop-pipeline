@@ -22,10 +22,20 @@ yum -y install perl-DBD-mysql perl-DBI
 yum -y install perl-DBD-Pg
 yum -y install which
 
+mkdir /home/pipeline;
 cd /home/pipeline;
 mkdir src;
 cd src;
 
 mkdir ensembl-perl;
 cd ensembl-perl;
-git clone https://github.com/Ensembl/ensembl-hive.git
+pwd;
+git clone https://github.com/Ensembl/ensembl-hive.git;
+cd ensembl-hive;
+git checkout -b version/2.1;
+cd ..;
+git clone https://github.com/Ensembl/ensembl.git;
+cd ensembl
+git checkout -b release/77;
+cd ..;
+ls -al; 

@@ -25,7 +25,7 @@ yum -y install perl-Test-Most
 yum -y install expat-devel
 yum -y install perl-GraphViz
 
-cpanm Bio::Perl
+cpanm -f Bio::Perl
 
 mkdir /home/src;
 cd /home/src;

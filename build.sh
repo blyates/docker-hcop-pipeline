@@ -24,6 +24,10 @@ yum -y install which
 yum -y install perl-Test-Most
 yum -y install expat-devel
 yum -y install perl-GraphViz
+yum install "perl(XML::LibXML)"
+yum install perl-Crypt-SSLeay
+yum install perl-SOAP-Lite
+yum install perl-IO-Socket-SSL
 
 cpanm -f Bio::Perl
 

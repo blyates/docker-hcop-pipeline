@@ -51,8 +51,3 @@ git fetch
 git checkout -b version/2.1 origin/version/2.1;
 cpanm --installdeps .
 ls -al;
-cd;
-cd /home/pipeline/Genefam;
-cpanm --installdeps .
-cd /home/pipeline/HCOP;
-cpanm --installdeps .

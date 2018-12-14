@@ -40,12 +40,14 @@ mkdir ensembl-perl;
 cd ensembl-perl;
 git clone https://github.com/Ensembl/ensembl.git;
 cd ensembl;
-git checkout -b release/77;
+git fetch
+git checkout -b release/77 origin/release/77;
 cpanm --installdeps . 
 cd ../;
 git clone https://github.com/Ensembl/ensembl-hive.git;
 cd ensembl-hive;
-git checkout -b version/2.1;
+git fetch
+git checkout -b version/2.1 origin/version/2.1;
 cpanm --installdeps .
 ls -al;
 cd;

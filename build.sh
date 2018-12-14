@@ -24,12 +24,13 @@ yum -y install which
 yum -y install perl-Test-Most
 yum -y install expat-devel
 yum -y install perl-GraphViz
-yum install perl-XML-Simple
-yum install "perl(XML::LibXML)"
-yum install perl-Crypt-SSLeay
-yum install perl-SOAP-Lite
-yum install perl-IO-Socket-SSL
-yum install mysql-server
+yum -y install perl-XML-Simple
+yum -y install "perl(XML::LibXML)"
+yum -y install perl-Crypt-SSLeay
+
+yum -y install perl-SOAP-Lite
+yum -y install perl-IO-Socket-SSL
+yum -y install mysql-server
 /sbin/chkconfig --levels 235 mysqld on
 
 cpanm -f Bio::Perl
@@ -51,3 +52,7 @@ git checkout -b version/2.1 origin/version/2.1;
 cpanm --installdeps .
 ls -al;
 cd;
+cd /home/pipeline/Genefam;
+cpanm --installdeps .
+cd /home/pipeline/HCOP;
+cpanm --installdeps .
